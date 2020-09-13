@@ -1,6 +1,12 @@
 ## dotfiles
 
 I decided to keep a repository of my dotfiles to preserve my favorite settings for bash, tmux, vim, etc.
+If you want to clone this entire repository, do it in the ~ directory. The files in directories should be
+symbolically linked to their respective files. For example, the file (in this repository) /etc/vim/vimrc.local
+would link to /etc/vim/vimrc.local. This was done as a way to remember where each symlink needs to be created.
+
+---
+
 This README will walk you through the steps on how to do that from scratch.
 
 If it's your first time using git on the terminal, you need to first make sure you have registered an account
