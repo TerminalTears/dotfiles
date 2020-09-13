@@ -1,0 +1,21 @@
+"Map Escape to j
+inoremap jj <Esc>
+
+"Toggle Number Lines by hitting Ctrl-N twice.
+nmap <C-N><C-N> :set invnumber<CR>
+
+"Highlight searches and include characters as they're typed.
+"hlsearch and incsearch can be swappwed with hls and is, respectively.
+"To clear search do :noh for no highlighting, or /<gibberish>
+set hlsearch 
+set incsearch 
+
+"Allow for a specific colorscheme to be used
+colorscheme molokai
+
+"Color compatability settings for vim in tmux
+if exists('+termguicolors')
+	let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+	let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+	set termguicolors
+endif
