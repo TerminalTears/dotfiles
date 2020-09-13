@@ -5,9 +5,7 @@ I decided to keep a repository of my dotfiles to preserve my favorite settings f
 
 ---
 If it's your first time using git on the terminal, you need to first make sure you have registered an account
-on Github and created a repository for your docfiles open a terminal run the following commands:
-
-***Example***:
+on Github and created a repository for your dotfiles. Then open a terminal run the following commands:
 
     $ git config --global user.name "Your name here"
     $ git config --global user.email "your_email@example.com"
