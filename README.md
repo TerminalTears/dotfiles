@@ -12,7 +12,7 @@ on Github and created a repository for your dotfiles. Then open a terminal run t
 
 ---
 
-**Step 1.)** Create a directory on your machine to store your docfiles. I chose a directory named 'dotfiles'.
+**Step 1.)** Create a directory on your machine to store your dotfiles. I chose a directory named 'dotfiles'.
 
     $ mkdir ~/.dotfiles
 
