@@ -1,35 +1,45 @@
-# dotfiles
+## dotfiles
 
-If it's your first time using Github on the terminal, you need to first open a terminal
-run the following commands:
+I decided to keep a repository of my dotfiles to preserve my favorite settings for bash, tmux, vim, etc.
+This README will walk you through the steps on how to do that from scratch.
 
-Example:
-$ git config --global user.name "Your name here"
-$ git config --global user.email "your_email@example.com"
+If it's your first time using git on the terminal, you need to first make sure you have registered an account
+on Github and created a repository for your docfiles open a terminal run the following commands:
 
+***Example***:
 
-Create a directory somewhere called 'dotfiles'.
-Copy your original dotfiles to this directory.
-Replace the original dotfiles with symlinks. Ensure to use absolute paths in the ln command.
--s creates a symbolic link -f forces forces the removal of existing destination files.
-If you have a lot of dotfiles, consider creating a script to create the symbolic links.
+    $ git config --global user.name "Your name here"
+    $ git config --global user.email "your_email@example.com"
 
-Example:
-$ ln -sf ~/dotfiles/.bashrc ~/.bashrc
+---
 
-Push the files to your repository.
-$ git init
-$ git add .
-$ git commit -m ‘first commit’
-$ git remote add origin https://github.com/yourname/dotfiles
-$ git push origin master
+**Step 1.)** Create a directory on your machine to store your docfiles. I chose a directory named 'dotfiles'.
 
-You may get an error about unrelated histories when running 'git push origin master' for the 
-first time. In order to get around this, you first have to run the following command.
-$ git pull origin master --allow-unrelated-histories
+    $ mkdir ~/.dotfiles
 
-Now you can run the push command again.
-$ git push origin master
+**Step 2.)** Copy your original dotfiles to the newly created directory.
 
-Referece:
-https://github.community/t/how-to-deal-with-refusing-to-merge-unrelated-histories-error/1372
+    $ cp ~/.bashrc ~/.dotfiles
+
+**Step 3.)** Replace the original dotfiles with symlinks. Ensure to use absolute paths in the command.
+The -s and -f options creates a symlink and forces the removal of existing destination files, respectively.
+If you have a lot of dotfiles, consider creating a script to create the symbolic links for you so you can just
+run the script on a freshly installed system.
+
+    $ ln -sf ~/dotfiles/.bashrc ~/.bashrc
+
+**Step 4.)** From the dotfiles directory, push the files to your repository.
+
+    $ git init
+    $ git add .
+    $ git commit -m ‘first commit’
+    $ git remote add origin https://github.com/yourname/dotfiles
+    $ git push origin master
+
+**Circumventing "Fatal: refusing to merge unrelated histories" error**
+You may get an error about unrelated histories when running the 'git push origin master' command for the 
+first time. In order to get around this, use the following commands.
+
+    $ git pull origin master --allow-unrelated-histories
+    $ git push origin master
+
