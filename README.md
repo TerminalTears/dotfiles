@@ -44,3 +44,15 @@ first time. In order to get around this, use the following commands.
 
 **Additional Notes**
 If you want to clone this entire repository, do it in the **~** directory. The files in directories should be symbolically linked to their respective files on the target system. For example, the file (in this repository) **/etc/vim/vimrc.local** would link to **/etc/vim/vimrc.local** on the target machine. This was done as a way to remember where each symlink needs to be created. Files in the root directory of this repository should be linked to the **~** with their respective filenames.
+
+
+
+---
+### Removing a folder from git
+If you need to remove git from a folder for any reason, use the following command in the directory that you don't need to run git. For example, if you change the repository name and you want that name change reflected in a new directory on your system.
+
+		rm -rf .git
+
+### Committing changes
+If you modify a file you must you first commit the change before pushing it.
+		git commit -a -m "Write a message"
