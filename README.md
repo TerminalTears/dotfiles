@@ -55,4 +55,5 @@ If you need to remove git from a folder for any reason, use the following comman
 
 ### Committing changes
 If you modify a file you must you first commit the change before pushing it.
+		
 		git commit -a -m "Write a message"
