@@ -1,7 +1,7 @@
 
-## dotfiles
+## Using Github for Storing Dotfiles
 
-I decided to keep a repository of my dotfiles to preserve my favorite settings for bash, tmux, vim, etc. This README will walk you through the steps on how to do that from scratch.
+Dotfiles are the configuration files for your Linux system. I decided to keep a repository of my dotfiles to preserve my favorite settings for bash, tmux, vim, etc so that the same settings could easily be applied to new installations. This README will walk you through the steps on how to do that from scratch.
 
 ---
 If it's your first time using git on the terminal, you need to first make sure you have registered an account
