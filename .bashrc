@@ -111,3 +111,6 @@ fi
 
 #An alias for tmux show-buffer
 alias buff="tmux show-buffer"
+
+#userpath for pipx
+export PATH="$PATH:/root/local/bin"
