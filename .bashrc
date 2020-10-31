@@ -112,5 +112,11 @@ fi
 #An alias for tmux show-buffer
 alias buff="tmux show-buffer"
 
+# Simple HTTP Server
+alias httpserver="python -m SimpleHTTPServer 80"
+
 #userpath for pipx
 export PATH="$PATH:/root/local/bin"
+
+# Created by `userpath` on 2020-09-20 11:43:16
+export PATH="$PATH:/root/.local/bin"
