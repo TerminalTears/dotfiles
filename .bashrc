@@ -114,3 +114,14 @@ alias buff="tmux show-buffer"
 
 #userpath for pipx
 export PATH="$PATH:/root/local/bin"
+
+# Created by `userpath` on 2020-09-20 11:43:16
+export PATH="$PATH:/root/.local/bin"
+
+
+# Alias so I don't have to keep typing in the ip address of tun0
+alias TUN="ip a show dev tun0 | grep global | cut -d ' ' -f 6 | sed 's/\/24//'"
+
+
+# Sourcing for Virtualenvwrapper commands
+source /usr/local/bin/virtualenvwrapper.sh
