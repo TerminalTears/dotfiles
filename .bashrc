@@ -120,7 +120,6 @@ export PATH="$PATH:/root/local/bin"
 
 # Created by `userpath` on 2020-09-20 11:43:16
 export PATH="$PATH:/root/.local/bin"
-<<<<<<< HEAD
 
 
 # Alias so I don't have to keep typing in the ip address of tun0
@@ -129,5 +128,3 @@ alias TUN="ip a show dev tun0 | grep global | cut -d ' ' -f 6 | sed 's/\/24//'"
 
 # Sourcing for Virtualenvwrapper commands
 source /usr/local/bin/virtualenvwrapper.sh
-=======
->>>>>>> 3a8c802c0f40ad0ea833bc25cb28c4c79efb57ad
