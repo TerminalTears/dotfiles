@@ -26,6 +26,8 @@ If you have a lot of dotfiles, consider creating a script to create the symbolic
 run the script on a freshly installed system.
 
     $ ln -sf ~/dotfiles/.bashrc ~/.bashrc
+    $ ln -sf ~/dotfiles/.bash_profile ~/.bash_profile
+    
 
 **Step 4.)** From the dotfiles directory, push the files to your repository.
 
@@ -45,7 +47,9 @@ first time. In order to get around this, use the following commands.
 **Additional Notes**
 If you want to clone this entire repository, do it in the **~** directory. The files in directories should be symbolically linked to their respective files on the target system. For example, the file (in this repository) **/etc/vim/vimrc.local** would link to **/etc/vim/vimrc.local** on the target machine. This was done as a way to remember where each symlink needs to be created. Files in the root directory of this repository should be linked to the **~** with their respective filenames.
 
+You might be wondering why I have created a symlink for .bash_profile despite having already linked .bashrc file. The reason for this is because when tmux starts, it sources the terminal configuration from .bash_profile. This results in a colorless terminal. The two workarounds for this- The first workaround is to add the contents of .bashrc to .bash_profile, or add a line in the .bash_profile which sources from the .bashrc file.
 
+    $ source ~/.bashrc
 
 ---
 ### Removing a folder from git
