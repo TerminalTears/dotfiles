@@ -46,8 +46,10 @@ first time. In order to get around this, use the following commands.
     
 **Git push origin master not pushing changes to dotfiles**
 Sometimes the `git push origin master` command doesn't update the files that have been modified. First, run:
-    $ git commit -m 'message'
+```
 
+    $ git commit -m 'message'
+```
 A prompt will show up telling you which files have been modified, but are not staged for the commit. It will then list the files it is referring to. Then, run:
     $ git add <file>
 
