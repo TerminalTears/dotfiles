@@ -50,11 +50,13 @@ Sometimes the `git push origin master` command doesn't update the files that hav
 $ git commit -m 'message'
 ```
 A prompt will show up telling you which files have been modified, but are not staged for the commit. It will then list the files it is referring to. Then, run:
-```$ git add <file>
+```
+$ git add <file>
 ```
 
 Lastly, make the push
-```$ git push origin master
+```
+$ git push origin master
 ```
 
 **Additional Notes**
