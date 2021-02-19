@@ -43,6 +43,17 @@ first time. In order to get around this, use the following commands.
 
     $ git pull origin master --allow-unrelated-histories
     $ git push origin master
+    
+**Git push origin master not pushing changes to dotfiles**
+Sometimes the `git push origin master` command doesn't update the files that have been modified. First, run:
+    $ git commit -m 'message'
+
+A prompt will show up telling you which files have been modified, but are not staged for the commit. It will then list the files it is referring to. Then, run:
+    $ git add <file>
+
+Lastly, make the push
+    $ git push origin master
+
 
 **Additional Notes**
 If you want to clone this entire repository, do it in the **~** directory. The files in directories should be symbolically linked to their respective files on the target system. For example, the file (in this repository) **/etc/vim/vimrc.local** would link to **/etc/vim/vimrc.local** on the target machine. This was done as a way to remember where each symlink needs to be created. Files in the root directory of this repository should be linked to the **~** with their respective filenames.
