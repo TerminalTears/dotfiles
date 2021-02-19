@@ -128,3 +128,10 @@ alias TUN="ip a show dev tun0 | grep global | cut -d ' ' -f 6 | sed 's/\/24//'"
 
 # Sourcing for Virtualenvwrapper commands
 source /usr/local/bin/virtualenvwrapper.sh
+
+#alias autorecon="/usr/local/lib/python3.8/dist-packages/autorecon/autorecon.py"
+
+
+# This Alias is required to make sure that when running tmux, the first window created has it's output logged in the directory
+# from which Tmux was executed. The bindings for logging the new panes created by | and - are in .tmux.conf
+alias tmux="/root/.tmux_startup_log_script"
